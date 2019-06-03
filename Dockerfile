@@ -5,7 +5,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
     openssl \
-    sudo \
   && rm --recursive --force /var/lib/apt/lists/*
 
 ADD https://github.com/mmatczuk/go-http-tunnel/releases/download/2.1/tunnel_linux_amd64.tar.gz /usr/local/bin
